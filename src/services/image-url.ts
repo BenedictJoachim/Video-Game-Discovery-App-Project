@@ -1,5 +1,8 @@
+import { Image } from "@chakra-ui/react";
+import noImagePlaceholder6f3882e0 from "../assets/no-image-placeholder-6f3882e0.webp";
+
 const getCroppedImageUrl = (url: string) => {
-    if(!url) return '';
+    if(!url) return noImagePlaceholder6f3882e0;
 
     const target = 'media/';
     const index = url.indexOf(target) + target.length;
